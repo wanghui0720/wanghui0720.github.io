@@ -60,6 +60,7 @@ URLRequest 构造函数需要一个 URLRequest::Delegate 我们是通过这个de
 ### network stack 介绍
 
 <h4 id="Diagram">大致流程</h4>
+图片矢量图在[这里](https://wanghui0720.github.io/url_request_modify.svg)
 ![Object Relationship Diagram for URLRequest lifetime](https://wanghui0720.github.io/url_request_modify.svg)
 
 
