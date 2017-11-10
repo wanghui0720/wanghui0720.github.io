@@ -87,10 +87,11 @@ XSSAuditor现有过滤规则  分别用firefox跟chrome访问以下链接。 这
                            DeprecatedEqualIgnoringCase(name, "url"))) {
      			 url_ = StripLeadingAndTrailingHTMLSpaces(p->Value());
    			}
-	
-			http://10.129.193.58:8080/test.php?name=<object><param name='url' value='inject.html'></param></object>
+
+
+		  http://10.129.193.58:8080/test.php?name=<object><param name='url' value='inject.html'></param></object>
 			
-		![objectinject](https://wanghui0720.github.io/objectinject.png  "objectinject")
+      ![objectinject](https://wanghui0720.github.io/objectinject.png  "objectinject")
 			
 ## EmbedToken
 * startTag检测 首先检测 startTag的name是否在url中
