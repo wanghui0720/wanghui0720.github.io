@@ -53,7 +53,7 @@ XSSAuditor现有过滤规则  分别用firefox跟chrome访问以下链接。 这
 
 			http://10.129.193.58:8080/test.php?name=<object data='inject.html'></object>
 			
-  ![objectinject](https://wanghui0720.github.io/objectinject.png  "objectinject")
+  ![objectinject](https://wanghui0720.github.io/image/objectinject.png  "objectinject")
 			
 	* type属性
 	  简单删除type属性
@@ -93,7 +93,7 @@ XSSAuditor现有过滤规则  分别用firefox跟chrome访问以下链接。 这
 
 		  http://10.129.193.58:8080/test.php?name=<object><param name='url' value='inject.html'></param></object>
 			
-      ![objectinject](https://wanghui0720.github.io/objectinject.png  "objectinject")
+      ![objectinject](https://wanghui0720.github.io/image/objectinject.png  "objectinject")
 			
 ## EmbedToken
 * startTag检测 首先检测 startTag的name是否在url中
@@ -113,7 +113,7 @@ XSSAuditor现有过滤规则  分别用firefox跟chrome访问以下链接。 这
 			http://10.129.193.58:8080/test.php?name=<embed src='inject.html?t=1'>
 			http://10.129.193.58:8080/est.php?name=<embed src='inject.html'>
 			
-		![block](https://wanghui0720.github.io/block.png  "block")
+		![block](https://wanghui0720.github.io/image/block.png  "block")
 			
 	* type属性 
 		
@@ -126,13 +126,13 @@ XSSAuditor现有过滤规则  分别用firefox跟chrome访问以下链接。 这
       
       		    http://10.129.193.58:8080/test1.php?name=<iframe srcdoc='<h1>我是注入的</h1>'>
       		
-![frameinject](https://wanghui0720.github.io/frameinject.png  "frameinject")
+![frameinject](https://wanghui0720.github.io/image/frameinject.png  "frameinject")
 
   * src属性
   
        		    http://10.129.193.58:8080/test1.php?name=<iframe src='inject.html'>
 
-![frameinject](https://wanghui0720.github.io/frameinject.png  "frameinject")
+![frameinject](https://wanghui0720.github.io/image/frameinject.png  "frameinject")
       
 ## MetaToken
 * startTag 检测 首先检测 startTag的name是否在url中
@@ -167,7 +167,7 @@ XSSAuditor现有过滤规则  分别用firefox跟chrome访问以下链接。 这
 	 
 	 		http://10.129.193.58:8080/test.php?formurl='><form action='test1.php'>
 	 		
-![form](https://wanghui0720.github.io/form.png  "form")
+![form](https://wanghui0720.github.io/image/form.png  "form")
                    
 ## InputToken
 * startTag 检测 首先检测 startTag的name是否在url中
@@ -192,7 +192,7 @@ XSSAuditor现有过滤规则  分别用firefox跟chrome访问以下链接。 这
 		http://10.129.193.58:8080/test.php?inputformaction=' style='display:none''><input formaction='test1.php' 
 		
 	访问之后我们会发现原来的input被我们注入的脚本隐藏了， 并新创建了一个input标签。而这个标签的formaction指向了我们自己的地址
-	![formaction](https://wanghui0720.github.io/formaction.png  "formaction")
+	![formaction](https://wanghui0720.github.io/image/formaction.png  "formaction")
 
 ## ButtonToken
 * startTag检测 首先检测 startTag的name是否在url中
@@ -216,8 +216,8 @@ XSSAuditor现有过滤规则  分别用firefox跟chrome访问以下链接。 这
 	这样我们的文档就可以被宿主文档导入
 	
 	正常显示：
-	![linkrel_normal](https://wanghui0720.github.io/linkrel_normal.png  "linkrel_normal")
+	![linkrel_normal](https://wanghui0720.github.io/image/linkrel_normal.png  "linkrel_normal")
 	
 	导入后显示
 	
-	![linkrel](https://wanghui0720.github.io/linkrel.png  "linkrel")
+	![linkrel](https://wanghui0720.github.io/image/linkrel.png  "linkrel")
