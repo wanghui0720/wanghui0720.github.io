@@ -126,9 +126,9 @@ XSSAuditor现有过滤规则  分别用firefox跟chrome访问以下链接。 这
 ![frameinject](https://wanghui0720.github.io/frameinject.png  "frameinject")
 
   * src属性
-     
-     		  http://10.129.193.58:8080/test1.php?name=<iframe src='inject.html'>
-     		
+  
+       		  http://10.129.193.58:8080/test1.php?name=<iframe src='inject.html'>
+
 ![frameinject](https://wanghui0720.github.io/frameinject.png  "frameinject")
       
 ## MetaToken
