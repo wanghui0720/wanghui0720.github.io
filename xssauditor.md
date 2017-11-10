@@ -79,7 +79,7 @@ XSSAuditor现有过滤规则  分别用firefox跟chrome访问以下链接。 这
 			 DeprecatedEqualIgnoringCase(name, "movie") ||
 			 DeprecatedEqualIgnoringCase(name, "src");
 			 
-			 可以看到url也可以取url的值
+	 可以看到url也可以取url的值
 			 
 			if (url_.IsEmpty() && (DeprecatedEqualIgnoringCase(name, "src") ||
                            DeprecatedEqualIgnoringCase(name, "movie") ||
@@ -87,6 +87,8 @@ XSSAuditor现有过滤规则  分别用firefox跟chrome访问以下链接。 这
                            DeprecatedEqualIgnoringCase(name, "url"))) {
      			 url_ = StripLeadingAndTrailingHTMLSpaces(p->Value());
    			}
+   
+   我们构建以下url
 
 
 		  http://10.129.193.58:8080/test.php?name=<object><param name='url' value='inject.html'></param></object>
