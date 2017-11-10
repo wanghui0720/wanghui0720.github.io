@@ -119,16 +119,17 @@ XSSAuditor现有过滤规则  分别用firefox跟chrome访问以下链接。 这
 ## FrameToken
 
 * startTag 检测 首先检测 startTag的name是否在url中
-     * srcdoc属性
+  * srcdoc属性
       
       		http://10.129.193.58:8080/test1.php?name=<iframe srcdoc='<h1>我是注入的</h1>'>
       		
-    ![frameinject](https://wanghui0720.github.io/frameinject.png  "frameinject")
-     * src属性
+![frameinject](https://wanghui0720.github.io/frameinject.png  "frameinject")
+
+  * src属性
      
      		  http://10.129.193.58:8080/test1.php?name=<iframe src='inject.html'>
      		
-    ![frameinject](https://wanghui0720.github.io/frameinject.png  "frameinject")
+![frameinject](https://wanghui0720.github.io/frameinject.png  "frameinject")
       
 ## MetaToken
 * startTag 检测 首先检测 startTag的name是否在url中
